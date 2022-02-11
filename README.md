@@ -20,3 +20,18 @@
 * Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+* As the "silver tsunami" begins to impact, we will need to begin to prepare to fill 72 458 positions.
+   * A company wide restructuring should be considered to consolidate positions to minimize overall cost of hiring. 
+* There are currently 33 118 positions being held by employees that will not retire in the new future.
+'''
+-- select current employees
+SELECT ri.emp_no,
+	ri.first_name,
+	ri.last_name,
+	de.to_date
+INTO current_emp
+FROM retirement_info as ri
+LEFT JOIN dept_emp as de
+ON ri.emp_no = de.emp_no
+WHERE de.to_date = ('9999-01-01');
+'''
