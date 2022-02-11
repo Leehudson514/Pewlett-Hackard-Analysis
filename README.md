@@ -1,28 +1,30 @@
 # Pewlett-Hackard-Analysis
 ## Overview of the analysis
-* The purpose of this analysis was to determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program using pgAdmin and SQL.
+* The purpose of this analysis was to determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program through tools such as pgAdmin and SQL.
 * The client tasked us with "future-proofing the company by determining how many people will be retiring and, of those employees, who is eligible for a retirement package."
 ## Results: 
-* Task: Determine The Number of Retiring Employees by Title
+* Task: **Determine The Number of Retiring Employees by Title**
     *   The largest groups about to retire are employees with the title "Senior Engineer" and "Senior Staff".
-    *   These "Senior" title holders make up 70% of the retirees.
+    *   **These "Senior" title holders make up 70% of the retirees.**
+    *   Total number of retirees: 72, 458 personnel.
 
 ![goals](count_titles.png)
 
-* Task: Determine The Employees Eligible for the Mentorship Program
+* Task: **Determine The Employees Eligible for the Mentorship Program**
     *   There are only 1549 employees that are eligible for the mentorship program
-    *   The titles with the largest count available for the mentorship program are "Engineers" and "Senior Staff".
-        *   These titles make up a total of 57% of the eligibility for the program.
+    *   The titles with the largest availablity for the mentorship program are "Engineers" and "Senior Staff".
+        *   **These titles make up a total of 57% of the eligibility for the program.**
 
 ![goals](count_mentorship.png)
 
 ## Summary: 
-* As the "silver tsunami" begins to impact, we will need to begin to prepare to fill 72 458 positions.
-   * A **company wide restructuring** should be considered to consolidate positions to minimize overall cost of hiring. 
-* There are currently 33 118 positions being held by employees that will not retire in the new future and only 1549 employees that are eligible for the mentorshi program.
-    * Clearly there will not be enough mentors to go around, there will need to be a focus on training and development for current employees.
+* As the "silver tsunami" begins to roll through, we will need to prepare to fill 72, 458 positions.
+   * A **company wide restructuring** opportunity should be considered to consolidate positions to minimize the overall cost of hiring. 
+* There are currently 33, 118 positions being held by employees that will not retire in the new future and only 1549 retirees that are eligible for the mentorship program.
+    * Clearly, there will not be enough mentors to go around. There is a need of training and development for current employees.
         * Proposal:
-          * **Mentor Group trainings,** each mentor will be assigned 21 current employees to educate and pass on their knowledge to.
+          * **Mentor group trainings,** each mentor will be assigned an average of 23 current employees to educate and pass on their knowledge to.
+          * **External recruitment and training** will be required specifically for **Senior Engineers**, this department has the most amount of retirees coupled with the least amount of eligible mentors.
 
 ```
 -- querie to select current employees
